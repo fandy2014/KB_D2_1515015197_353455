@@ -1,0 +1,22 @@
+Prolog --> Natural.
+	1. orang(dian) = dian adalah nama orang.
+	2. mobil(atoz) = atoz adalah merek mobil.
+	3. suka(dian,atoz)) = dian menyukai mobil atoz.
+	4. dijual(atoz): mobil atoz dijual.
+	5. dapat_membeli(X,Y):- = X dapat membeli Y jika
+		orang(X), = X adalah orang.
+		mobil(Y), = Y adalah mobil.
+		suka(X,Y), = X menyukai Y.
+		dijual(Y). = Y dijual.
+	6.suka(_,Apa) = Apa yang_suka?
+
+Natural --> Prolog.
+	1. Ricky mempunyai hobi bermain catur = Hobi(Ricky, catur).
+	2. Embang orangnya pemalas = Orang (embang, pemalas).
+	3. Yusid seorang vegetarian =  Seorang(Yusida, vegetarian).
+	4. Kusdiar pandai bermain gitar = pandai (kusdiar, gitar).
+	5. Mobil yang berwarna merah itu milik Sadek, bermerk BMW = Milik(mobil, sadek), warna(mobil, merah), merek(mobil, BMW).
+	6. Awan seorang pemain piano, berasal dari Pontianak bersuku jawa = Pemain(Awan, piano), berasal(Awan, pontianak), suku(Awan, jawa).
+	7. Seseorang dikatakan baik jika mempunyai sifat penyayang dan dermawan = Dikatakan(orang, baik):- sifat(orang,penyayang),sifat(orang,dermawan).
+	8. Seseorang dikatakan pintar jika salah satu dari Matematika atau IPA atau IPS mendapat nilai tinggi = Dikatakan(orang, pintar):- dapat(matematika, tinggi); dapat(ipa, tinggi); dapat(ips, tinggi).
+	9. Setiap orang pasti mati = orang(setiap, mati).
